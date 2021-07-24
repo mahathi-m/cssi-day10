@@ -16,6 +16,85 @@
     <script defer src="js/main.js"></script>
   </head>
   <body>
-    <h1 class="title has-text-centered">You Cool App!</h1>
+    	<section class="hero is-fullheight">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<div class="columns is-8 is-variable ">
+					<div class="column is-half is-centered">
+                        <h1 class="title is-1">Plan your day!</h1>
+                        <p class="subtitle">Agenda Builder</p>
+                        <p class="subtitle"><a class="button is-link has-text-weight-medium is-medium" href="agendaViewer.html">View Agenda Here</a> </p>
+						<div>
+                            <img class="coverImg" id="coverImg">
+                        </div>
+                    </div>
+                    
+
+                        
+                    <div class = "column is-centered is-half has-text-left">
+                        <div class = "field">
+                            <label class="label"> Title of task:</label>
+                            <input id="taskTitle" class="input is-primary is-small" 
+                            type="text" name="title" placeholder="CSSI Spicy Challenge">
+                            <br><br>
+
+                            <label class="label"> Description of task:</label>
+                            <input id="taskDescription" class="input is-primary is-small" 
+                            type="text" name="description" placeholder="Brief description">
+                            <br><br>
+
+                            <label class="label">What is the type of your task?</label>
+							<div class="control">
+								<select id="taskType" name="taskType">
+                                    <option value="school">School/Homework</option>
+                                    <option value="extracurricular">Extracurricular</option>
+                                    <option value="chore">Chore</option>
+                                </select>                                
+                            </div>
+                            <br>
+
+                            <label class="label">Task Difficulty</label>
+							<div class="control">
+								<select id="difficultyType" name="difficultyType">
+                                    <option value="mild">Mild</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="spicy">Spicy</option>
+                                </select>                                
+                            </div>
+                            <br>
+
+                            <label class="label">When do you want to start your task?</label>
+							<div class="control">
+								<select id="timeType" name="timeType">
+                                    <option value="8:00">8:00</option>
+                                    <option value="9:00">9:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                </select>                                
+                            </div>
+                            <br>
+
+                            <div class="control">
+                            <button class="button is-link is-fullwidth has-text-weight-medium is-medium" 
+                            id="surveySubmit" onclick="handleSubmitSurvey()">Submit</button>
+						</div>
+
+                        </div>
+
+                   
+				</div>
+			</div>
+		</div>
+    </section>
+
   </body>
 </html>
